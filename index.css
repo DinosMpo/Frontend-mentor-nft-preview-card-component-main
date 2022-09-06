@@ -4,17 +4,149 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	flex-direction: column;
+	background-color: hsl(217, 54%, 11%);
+	font-size: 18px;
+	font-family: 'Outfit', sans-serif;
 }
 
 .container {
+		width: 400px;
+		height: 650px;
+		background-color: hsl(217, 54%, 12%);
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		position: relative;
+}
+
+.second-layer {
+	background-color: hsl(217, 54%, 11%);
+	width: 375px;
+	height: 600px;
+	border-radius: 10px;
+	position: absolute;
+	top: 30px;
+}
+
+.card {
 	width: 350px;
 	height: 595px;
 	background-color: hsl(216, 50%, 16%);
 	color: hsl(0, 0%, 100%);
-	border-radius: 20px;
-	/*padding: 10px;*/
+	border-radius: 10px;
+	margin: 0px auto;
+	box-shadow: black;
+	margin-top: 10px;
+	z-index: 1;
 }
 
 .card-container {
-	margin: 20px;
+	margin: 25px;
+}
+
+.equilibrium{
+	display: block;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.card-info {
+	color: hsl(215, 51%, 70%);
+}
+
+.eth-info {
+	display: block;
+	height: 25px;
+}
+
+.eth-price {
+	display: flex;
+	float: left;
+	align-items: center;
+	color: hsl(178, 100%, 50%);
+	font-weight: bold;
+}
+
+.eth-price svg {
+	margin-right: 5px;
+}
+
+.eth-time {
+	display: flex;
+	align-items: center;
+	float: right;
+	color: hsl(215, 51%, 70%);
+}
+
+.eth-time svg {
+	margin-right: 5px;
+}
+
+hr {
+	margin-top: 25px;
+  border: none;
+  height: 1px;
+  background-color: hsl(215, 51%, 70%);
+}
+
+.creator {
+	display: flex;
+}
+
+.creation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+	display: inline;
+	float: left;
+	width: 30px;
+	border: 1px solid white;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+
+.user-name {
+	color: white;
+	margin-left: 5px;
+}
+
+
+.card-container h3:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+
+.user-name:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+
+.container-equilibrium {
+	position: relative;
+}
+
+.container-equilibrium:hover {
+	cursor: pointer;
+}
+
+.cyan-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	opacity: 0%;
+}
+
+.cyan-screen:hover {
+	background-color: hsla(178, 100%, 50%, .5);
+	cursor: pointer;
+	opacity: 100%;
 }
